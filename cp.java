@@ -7,6 +7,7 @@ public class cp{
         int t=in.nextInt();
         while(t-->0){
             
+
         }
         out.close();
     }
@@ -16,6 +17,16 @@ public class cp{
             a[i]=in.nextInt();
         }
         return a;
+    }
+    static ArrayList<ArrayList<Integer>> getAdj(int n){
+        ArrayList<ArrayList<Integer>> adj=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            adj.add(new ArrayList<>());
+        }
+        for(int i=1;i<n;i++){
+            adj.get(in.nextInt()).add(in.nextInt());
+        }
+        return adj;
     }
     static int[] sort(int[] a){
         ArrayList<Integer> list=new ArrayList<>();
